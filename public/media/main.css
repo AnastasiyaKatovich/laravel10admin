@@ -1,0 +1,382 @@
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  color: #000;
+  background-color: #fff;
+  min-width: 320px;
+}
+
+img{
+  height: auto;
+  max-width: 100%;
+}
+
+section{
+  padding: 30px 0;
+}
+
+a{
+  color: #111;
+}
+
+a:hover{
+  color: #555;
+}
+
+
+
+/* блюдо крутится */
+.navbar-brand img{
+  width: 45px;
+}
+
+/* img.rotate-img {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img.rotate-img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+} */
+
+/* карусель */
+.my-carousel{
+  padding: 0;
+}
+.my-carousel .carousel-item{
+  display: flex;
+  max-height: 500px;
+}
+.my-carousel .carousel-item img{
+object-fit:cover;
+}
+
+/* стили header */
+.nav-item .navbar-nav .navbar-link .navbar-light{
+  color: #111;
+  font-weight: 500;
+  text-transform: uppercase;
+
+}
+.navbar-nav .dropdown-menu{
+  right: 0;
+  left: auto;
+}
+
+.top-menu li a::after{
+  content: " ";
+  display: block;
+  width: 100%;
+  background-color: #111;
+  height: 1px;
+  transition: all .3s;
+  transform: scale(0);
+}
+
+.top-menu li a:hover:after{
+  transform: scale(1);
+}
+
+.modal-body img{
+  max-width: 100px;
+}
+
+/*
+надпись анимация */
+p
+{
+  margin: 0 0 10px;
+}
+
+ul
+{
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  /* font-weight: 900;                    стили для контейнера
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0 20px; */
+}
+
+.take-input {
+  margin: 50px 0 0;
+}
+
+.take-input input {
+  width: 400px;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+  margin: 0 15px 0 0;
+  font-size: 15px;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+  /* padding: 9px 15px;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  color: gray; */
+}
+
+.animate {
+  font-size: 50px;
+  /* margin: 100px 0 0;
+  border-bottom: 2px solid #ccc; */
+}
+
+.animate span {
+  display: inline-block;
+}
+
+.text-content{
+  padding: 50px;
+}
+
+/* a.repeat {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: none;
+  text-decoration: none;
+  color: orange;
+  padding: 5px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-weight: normal;
+  margin: 0 0 0 50px;
+  border-radius: 3px;
+  position: relative;
+  bottom: 15px;
+} */
+
+/* a.repeat:hover {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+} */
+
+.animate span:nth-of-type(2) {
+  animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+  animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+  animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+  animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+  animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+  animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+  animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+  animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+  animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+  animation-delay: .5s;
+}
+
+/* Animation Six */
+.six span {
+  color: #ddb40f;
+  opacity: 0;
+  transform: rotate(-180deg) translate(150px, 0);
+  animation: twister .5s forwards;
+}
+
+@keyframes twister {
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg) translate(0);
+    opacity: 1;
+  }
+}
+
+.animate img{
+  max-width: 100px;
+}
+
+
+
+
+#non{
+  display: none;
+}
+
+.div1 li {
+  list-style: none;
+  float: left;
+  width: 200px;
+  margin: 30px;
+}
+
+.div1 li img {
+  max-width: 40px;
+}
+
+
+.div1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.div2 {
+  /* border: 1px #000 solid; */
+  clear: both;
+}
+
+.box1 {
+  float: left;
+  width: 200px;
+  text-align: center;
+}
+
+.box2 {
+  float: left;
+  width: 200px;
+  text-align: center;
+}
+
+.box3 {
+  float: left;
+  width: 200px;
+  text-align: center;
+}
+
+.allMoney {
+  float: right;
+}
+
+
+
+#pizzaImg{
+  max-width: 400px;
+}
+
+
+
+
+
+/*
+footer */
+.footer{
+  background-color: #343434;
+}
+
+footer section{
+  padding: 0;
+  padding-top: 20px;
+}
+
+.footer h4{
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: 1px solid #666;
+  padding-bottom: 3px;
+}
+
+.footer a{
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.footer a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer a, .footer li{
+  color: #c8c8c8;
+}
+
+
+
+/* прогресс бар */
+
+.wrapper{
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+.progress-line{
+  width: 100%;
+  background-color: #2fc54d;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  top: 0;
+  position: absolute;
+  text-align: center;
+}
+.progress-line-bg{
+  background-color: #ccc;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+
+/* аккордеон */
+.lin{
+  border-top: #555 5px solid;
+  padding: 15px;
+  margin-bottom: 30px
+}
+
+
+.accordion {
+  margin: auto;
+}
+.panel {
+  padding: 5px;
+  text-align: center;
+}
+.panel-body {
+  display: none;
+}
+.panel-header p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.panel-header p{
+  font-size: larger;
+}
+
+
+
+/* блюдо */
+.salatImg{
+  height: 450px;
+}
+.salatImg img{
+  height: 450px;
+}
+
+.face{
+  display: none;
+}
