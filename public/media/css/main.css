@@ -1,0 +1,100 @@
+ul li .relative{
+    width: 20px;
+}
+
+
+
+header .head-top{
+    background-color: #e9e6e6;
+    padding: 5px 0;
+}
+header .head-top nav a{
+    width: 20px;
+    height: 20px;
+    /* background-color: #343434; */
+    /* border-radius: 50px; */
+}
+
+/*
+header .head-top nav {
+    padding-right: 25px;
+}
+
+.my-profil figure{
+    gap: 19px;
+}
+*/
+
+header .header{
+    border-bottom: 1px solid #dad2d2;
+    padding: 15px 0;
+}
+header .header a{
+    font-size: 0,875rem;
+    line-height: 19px;
+    color: #343434;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    transition: 0.5 as all ease;
+}
+header .header a:hover{
+    color: salmon;
+    /* border-bottom: 1px solid salmon; */
+}
+
+header .header form div{
+    background-color: #fff;
+    border: #dad2d2 1px solid;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 8px;
+}
+header .header form div input{
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 329px;
+    width: 100%;
+}
+header .header form div button{
+    background: none;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+/*
+footer */
+.footer{
+  background-color: #343434;
+  padding: 60px 0 40px;
+}
+
+footer section{
+  padding: 0;
+  padding-top: 20px;
+}
+
+.footer h4{
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: 1px solid #666;
+  padding-bottom: 3px;
+}
+
+.footer a{
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.footer a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer a, .footer li{
+  color: #c8c8c8;
+}

@@ -20,11 +20,11 @@
 </head>
 <body>
 <div
-    class="flex h-screen bg-gray-50 dark:bg-gray-900"
-    :class="{ 'overflow-hidden': isSideMenuOpen }"
+    {{-- class="flex h-screen bg-gray-50 dark:bg-gray-900"
+    :class="{ 'overflow-hidden': isSideMenuOpen }" --}}
 >
  @include('includes.sidebar')
-    <div class="flex flex-col flex-1 w-full">
+    {{-- <div class="flex flex-col flex-1 w-full">
         <header class="z-10 py-4 bg-white shadow-md dark:bg-gray-800">
             <div
                 class="container flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300"
@@ -154,7 +154,7 @@
                         <li class="relative">
                             <button class="align-middle rounded-full focus:shadow-outline-purple focus:outline-none" @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true">
                                Admin
-                                
+
                             </button>
                             <template x-if="isProfileMenuOpen">
                                 <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click.away="closeProfileMenu" @keydown.escape="closeProfileMenu" class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:border-gray-700 dark:text-gray-300 dark:bg-gray-700" aria-label="submenu">
@@ -202,7 +202,7 @@
         <main class="h-full overflow-y-auto">
             {{ $slot }}
         </main>
-    </div>
+    </div> --}}
 </div>
 </body>
 </html>
