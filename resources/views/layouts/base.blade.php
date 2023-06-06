@@ -44,7 +44,7 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 {{-- @if(Auth::user()) --}}
                                 <li>
-                                    <a class="dropdown-item" href="{{asset('dashboard')}}">{{Auth::user()->name}}</a>
+                                    <a class="dropdown-item" href="{{asset('dashboard')}}">Главная</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="">Мои сообщения</a>
@@ -53,7 +53,7 @@
                                     <a class="dropdown-item" href="">Мои обьявления</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="">Избранное</a>
+                                    <a class="dropdown-item" href="{{asset('ticket/favorite')}}">Избранное</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="">Личные данные</a>

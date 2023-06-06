@@ -20,7 +20,7 @@ class CheckIsAdmin
         }
 // dd($request->user()->is_admin);
 
-        if($request->user()->is_admin == 0){
+        if($request->user()->isAdmin == 0){
             return redirect('/');
         };
 

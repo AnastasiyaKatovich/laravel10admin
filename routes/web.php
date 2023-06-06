@@ -68,6 +68,9 @@ Route::middleware('auth')->group(function () {
 Route::prefix('ticket')->controller(Controllers\TicketController::class)->group(function(){
     Route::get('', 'getIndex');
     Route::post('', 'PostIndex');
+    Route::get('{ticket}/favorite', 'addFavorite')->where('ticket','[0-9]+');
+    Route::get('favorite', 'myFavorite');
+    Route::get('favorite/{id}/delete', 'deleteFavorite');
 });
 });
 Route::get('tickets', [Controllers\TicketController::class, 'getAll']);

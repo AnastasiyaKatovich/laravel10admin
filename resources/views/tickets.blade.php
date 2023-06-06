@@ -6,6 +6,7 @@
     {!!$ticket->body!!}
     <a href="{{asset('ticket/'.$ticket->id)}}">подробнее</a>
     <img src="{{$ticket_media_arr[$ticket->id]}}" width="200px"/>
+    <a href="{{asset('ticket/'.$ticket->id.'/favorite')}}">добавить в избранные</a>
 
     <hr />
 @endforeach
