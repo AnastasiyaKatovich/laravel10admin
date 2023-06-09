@@ -7,6 +7,7 @@ use App\Models\Ticket;
 use App\Models\Catalog;
 use App\Models\Country;
 use App\Models\TicketFavorite;
+// use App\Models\TicketMain;
 use Auth;
 use App\Http\Requests\TicketRequest;
 
@@ -57,6 +58,13 @@ class TicketController extends Controller
         return redirect('tickets');
     }
 
+    public function myTicket(){
+        $main_tickets = Ticket::whereUserId(auth()->user()->id)->get();
+        // dd($main_tickets);
+        // $main_tickets = TicketMain::where('user_id', Auth::user()->id)->get();
+        return view('main_tickets',compact('main_tickets'));
+    }
+
     public function addFavorite(Ticket $ticket){
         $favorite=TicketFavorite::where('user_id', Auth::user()->id)->where('ticket_id',$ticket->id)->first();
         if (!$favorite){
@@ -80,4 +88,19 @@ class TicketController extends Controller
         }
         return redirect()->back();
        }
+
+
+
+    //    public function addMyTicket(Ticket $main){
+    //     $main_tickets=TicketMain::where('user_id', Auth::user()->id)->where('ticket_id',$main->id)->first();
+    //     if (!$main_tickets){
+    //         $main_tickets = new TicketFavorite;
+    //         $main_tickets->user_id = Auth::user()->id;
+    //         $main_tickets->ticket_id = $main->id;
+    //         $main_tickets->save();
+    //     }
+    //     return redirect()->back();
+    // }
+
+
 }

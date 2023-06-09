@@ -10,5 +10,5 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 class Ticket extends Model implements HasMedia
 {
     use HasFactory, InteractsWithMedia;
-    public $fillable = ['user_id', 'place_id', 'catalog_id', 'subcatalog_id', 'body', 'event_datetime', 'price', 'active', 'online', 'country_id'];
+    public $fillable = ['user_id', 'place_id', 'catalog_id', 'subcatalog_id', 'body', 'name', 'event_datetime', 'price', 'active', 'online', 'country_id'];
 }
