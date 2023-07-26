@@ -9,4 +9,8 @@ class Catalog extends Model
 {
     use HasFactory;
     public $fillable=['name','body'];
+    public function tickets(){
+        return $this->hasMany(Ticket::class, 'catalog_id');
+    }
+
 }

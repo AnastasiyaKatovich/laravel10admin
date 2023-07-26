@@ -14,103 +14,49 @@
             <div class="col-8"><hr></div>
         </div>
         <div class="row">
-            <div class="col-6 p-3 exmp6">
-                <div class="row">
-                    <img src="{{asset('media/img/concert-k.jpeg')}}" class="img-fluid" alt="...">
-                <div class="p-3">
-                    <figure class="text-end">
-                        <blockquote class="blockquote">
-                            <p>Concerts</p>
-                            <i class="bi bi-arrow-right"></i>
-                        </blockquote>
-                    </figure>
-                </div>
-                </div>
-
+            @foreach ($catalogs as $catalog)
+            <div class="col-4 p-3 exmp6">
+                <a href="{{asset('catalog/' .$catalog->id)}}">
+                    <div class="row">
+                        <img src="{{asset('media/img/concert-k.jpeg')}}" class="img-fluid" alt="...">
+                        <div class="p-3">
+                            <figure class="text-end">
+                                <blockquote class="blockquote">
+                                    <h4>{{$catalog->name}}</h4>
+                                    {{-- <p>{{$catalog->body}}</p> --}}
+                                </blockquote>
+                            </figure>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="col-6 p-3 exmp6">
-                <div class="row">
-                    <img src="{{asset('media/img/exhibition-k.jpeg')}}" class="" alt="...">
-                <div class="p-3">
-                    <figure class="text-end">
-                        <blockquote class="blockquote">
-                            <p>Exhibitions</p>
-                            <i class="bi bi-arrow-right"></i>
-                        </blockquote>
-                    </figure>
-                </div>
-                </div>
-            </div>
-            <div class="col-6 p-3 exmp6 performance layered-image">
-                <div class="row">
-                    <img src="{{asset('media/img/theat.jpg')}}" class="" alt="...">
-                <div class="p-3">
-                    <figure class="text-end">
-                        <blockquote class="blockquote">
-                            <p>Performance</p>
-                            <i class="bi bi-arrow-right"></i>
-                        </blockquote>
-                    </figure>
-                </div>
-                </div>
-            </div>
-            <div class="col-6 p-3 exmp6 all">
+            @endforeach
+            <div class="col-4 p-3 exmp6 all">
+                <a class="nav-link" href="{{asset('tickets')}}">
                 <div class="row">
                     <img src="{{asset('media/img/theatr.jpg')}}" class="" alt="...">
                 <div class="p-3">
                     <figure class="text-end">
                         <blockquote class="blockquote">
                             <p>All categories</p>
-                            <i class="bi bi-arrow-right"></i>
                         </blockquote>
                     </figure>
                 </div>
                 </div>
+            </a>
+            </div>
+        </div>
+        <div class="row py-5 border border-light border-right">
+            <h4>Right now our online service offers you Hot Tickets <a href="{{asset('tickets')}}">{{App\Models\Ticket::count()}}</a>
+                <i class="bi bi-fire"></i>
+            </h4>
 
+        </div>
+        <div class="row d-flex justify-content-center border border-light border-right">
+            <div class="col-4">
+                <a class="btn btn-primary d-flex justify-content-center" href="{{asset('ticket')}}" role="button">Add your ticket</a>
             </div>
         </div>
     </div>
-    {{-- <div class="row gy-5">
-        <div class="col-6">
-            <div class="p-3 border bg-light">
-                <figure class="text-end">
-                    <blockquote class="blockquote">
-                        <p>Theatre</p>
-                        <i class="bi bi-arrow-right"></i>
-                    </blockquote>
-                </figure>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="p-3 border bg-light">
-                <figure class="text-end">
-                    <blockquote class="blockquote">
-                        <p>Show</p>
-                        <i class="bi bi-arrow-right"></i>
-                    </blockquote>
-                </figure>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="p-3 border bg-light">
-                <figure class="text-end">
-                    <blockquote class="blockquote">
-                        <p>Concerts</p>
-                        <i class="bi bi-arrow-right"></i>
-                    </blockquote>
-                </figure>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="p-3 border bg-light">
-                <figure class="text-end">
-                    <blockquote class="blockquote">
-                        <p>All categories</p>
-                        <i class="bi bi-arrow-right"></i>
-                    </blockquote>
-                </figure>
-            </div>
-        </div>
-    </div> --}}
 </div>
 @endsection
