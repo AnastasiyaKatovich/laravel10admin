@@ -23,18 +23,18 @@
             <div class="col-9">
                 <div class="row border border-light border-right py-2">
                     @if (request()->sort_by_date)
-                    <a class="col-11" href="?sort_by_date={{(request()->sort_by_date=='ASC')?'DESC':'ASC'}}">sort by date event <i class="bi  {{(request()->sort_by_date=='ASC')?'bi-arrow-up':'bi bi-arrow-down'}}"></i></a>
+                    <a class="col-5" href="?sort_by_date={{(request()->sort_by_date=='ASC')?'DESC':'ASC'}}">sort by date event <i class="bi  {{(request()->sort_by_date=='ASC')?'bi-arrow-up':'bi bi-arrow-down'}}"></i></a>
                    @else
-                   <a class="col-11" href="?sort_by_date=ASC">sort by date event <i class="bi bi-arrow-up"></i></a>
+                   <a class="col-5" href="?sort_by_date=ASC">sort by date event <i class="bi bi-arrow-up"></i></a>
                     @endif
 
                     @if (request()->sort_by_id)
-                    <a class="col-11" href="?sort_by_id={{(request()->sort_by_id=='ASC')?'DESC':'ASC'}}">sort by date create<i class="bi  {{(request()->sort_by_id=='ASC')?'bi-arrow-up':'bi bi-arrow-down'}}"></i></a>
+                    <a class="col-5" href="?sort_by_id={{(request()->sort_by_id=='ASC')?'DESC':'ASC'}}">sort by date create<i class="bi  {{(request()->sort_by_id=='ASC')?'bi-arrow-up':'bi bi-arrow-down'}}"></i></a>
                    @else
-                   <a class="col-11" href="?sort_by_id=ASC">sort by date create<i class="bi bi-arrow-up"></i></a>
+                   <a class="col-5" href="?sort_by_id=ASC">sort by date create<i class="bi bi-arrow-up"></i></a>
                     @endif
 
-                    <div class="col-1">
+                    <div class="col-2">
                         <i class="bi bi-border-all"></i>
                         <i class="bi bi-border-width"></i>
                     </div>

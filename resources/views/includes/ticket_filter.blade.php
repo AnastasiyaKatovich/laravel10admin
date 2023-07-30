@@ -25,11 +25,8 @@
           not onlain
         </label>
     </div>
-
     <div class="py-4">
         <button type="submit" class="btn btn-primary">Show tickets</button>
-    </div>
-    <div class="">
-        <button type="submit" class="btn btn-primary">Reset</button>
+        <button type="reset" for="submit" class="btn btn-primary">Reset</button>
     </div>
 </form>

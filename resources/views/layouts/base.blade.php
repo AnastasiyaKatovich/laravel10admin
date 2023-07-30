@@ -20,6 +20,10 @@
     </head>
     <body>
         <header>
+            <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+                <i class="bi bi-arrow-up-square"></i>
+
+            </button>
             <div class="head-top container-fluid">
                 <div class="container px-4">
                     <div class="row align-items-center justify-content-center gx-5">

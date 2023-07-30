@@ -22,6 +22,9 @@
     </head>
     <body>
         <header>
+            <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
             <div class="head-top container-fluid">
                 <div class="container">
                     <div class="row">
